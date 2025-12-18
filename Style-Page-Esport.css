@@ -208,4 +208,8 @@
     background-color: rgb(222, 165, 41);
 }
 
-
+.esport-image {
+    
+    position: absolute; top : 3vw;
+    z-index: 1;
+}
