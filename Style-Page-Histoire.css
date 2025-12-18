@@ -1,41 +1,52 @@
+:root {
+    /* Mode Sombre (par défaut) */
+    --fond-histoire: url("https://www.laboiteverte.fr/wp-content/uploads/2013/05/decors-jeu-combat-121-620x465.gif");
+    --couleur-texte: #fffffeec;
+}
+
+.mode-clair {
+    / Mode Clair : Fond blanc et texte noir /
+    --fond-histoire: none; / Supprime le GIF de fond /
+    --couleur-texte: #000000;
+    background-color: #ffffff; / Définit la couleur de fond en blanc /
+}
 .page-histoire {
     margin: 0;
     padding: 0;
-    /* Image de fond : remplace par le nom correct de ton fichier */
-    background-image: url("https://www.laboiteverte.fr/wp-content/uploads/2013/05/decors-jeu-combat-121-620x465.gif"); 
-    background-size: cover;      /* L'image couvre tout l'écran [cite: 1216] */
-    background-repeat: no-repeat; /* Pas de répétition [cite: 1213] */
-    background-attachment: fixed; /* L'image reste fixe au scroll [cite: 1211] */
-    color: #ffffff;               /* Texte blanc pour la lisibilité [cite: 1118] */
-    width: 100%;
+    / Utilisation de la variable pour le fond /
+    background-image: var(--fond-histoire); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    / Utilisation de la variable pour le texte /
+    color: var(--couleur-texte);
     font-family: Arial, sans-serif;
+    transition: 0.3s; / Pour une transition douce entre les modes /
 }
 .hero-img {
-    width: 100%;       /* Prend toute la largeur [cite: 1026] */
-    max-height: 400px; /* Hauteur maximale pour l'effet bannière [cite: 1033] */
-    object-fit: cover; /* Recadre l'image proprement */
-    display: block;    /* Supprime l'espace vide sous l'image [cite: 984] */
+    width: 100%;       / L'image prend toute la largeur de la page  /
+    max-height: 400px; / On limite la hauteur pour l'effet bannière  /
+    object-fit: cover; / Important : cela évite de déformer l'image en la recadrant proprement /
+    display: block;    / Supprime l'espace vide sous l'image /
 }
 .content-blue-box {
-    text-align: center;      /* Centre tout le texte [cite: 1119] */
-    /* On réduit le padding du haut pour remonter le titre [cite: 1052] */
+    text-align: center;      / Centre tout le texte /
+    / On réduit le padding du haut pour remonter le titre /
     padding: 20px 10% 60px 10%; 
 }
 
 .content-blue-box h1 {
-    font-size: 4rem;         /* Taille de police relative [cite: 1009] */
-    text-transform: uppercase;/* Tout en majuscules [cite: 1099] */
-    margin-top: 0;           /* On colle le titre en haut [cite: 1047] */
+    font-size: 4rem;         / Taille de police relative /
+    text-transform: uppercase;/ Tout en majuscules /
+    margin-top: 0;           / On colle le titre en haut /
 }
 
 .content-blue-box p {
-    font-size: 1.2rem;       /* Texte plus gros [cite: 1097] */
-    text-align: justify;     /* Texte bien aligné [cite: 1119] */
-    line-height: 1.6;        /* Espacement pour la lisibilité */
-    max-width: 1000px;       /* Largeur max pour ne pas être trop long [cite: 1029] */
-    margin: 0 auto 20px auto;/* Centre le bloc de paragraphe [cite: 1061] */
-
-}
+    font-size: 1.2rem;       / Texte plus gros /
+    text-align: justify;     / Texte bien aligné /
+    line-height: 1.6;        / Espacement pour la lisibilité /
+    max-width: 1000px;       / Largeur max pour ne pas être trop long /
+    margin: 0 auto 20px auto;/ Centre le bloc de paragraphe */
 
 .MenuAccueil {
     color: rgb(254, 206, 102);
@@ -262,5 +273,6 @@
     transform: scale(1.03);
     background-color: rgb(222, 165, 41);
 }
+
 
 
