@@ -210,7 +210,8 @@
 
 .esport-image {
     
-    position: absolute; top : 3vw;
+    position: relative; top : 3vw;
     z-index: 1;
 }
+
 
