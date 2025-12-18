@@ -133,7 +133,7 @@
     text-decoration: underline; /*mettre un soulignement*/
     font-size : 2.5vw; /* taille du texte*/
     color: rgb(255, 255, 255); /*couleur du texte*/
-    position: absolute; left : 1vw; top : 31vw; /*position du menu*/
+    position: absolute; left : 1vw; top : 30vw; /*position du menu*/
     z-index: 2;
 }
 
@@ -393,13 +393,13 @@
 
 .facebook {
     font-size: 3vw;
-    position: absolute; left : 1vw; top : 36vw;
+    position: absolute; left : 1vw; top : 35vw;
     z-index: 4;
 }
 
 .instagram {
     font-size: 3vw;
-    position: absolute; left : 15vw; top : 36vw;
+    position: absolute; left : 15vw; top : 35vw;
     z-index: 4;
 }
 
@@ -417,9 +417,10 @@
 
 .youtube {
     font-size: 3vw;
-    position: absolute; left : 2vw; top : 40vw;
+    position: absolute; left : 6vw; top : 41vw;
     z-index: 4;
 }
+
 
 
 
