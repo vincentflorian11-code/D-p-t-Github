@@ -392,26 +392,32 @@
 }
 
 .facebook {
-    position: absolute; left : 1vw; top : 32vw;
+    font-size: 3vw;
+    position: absolute; left : 1vw; top : 35vw;
     z-index: 4;
 }
 
 .instagram {
-    position: absolute; left : 4vw; top : 32vw;
+    font-size: 3vw;
+    position: absolute; left : 4vw; top : 35vw;
     z-index: 4;
 }
 
 .linkedin {
-    position: absolute; left : 1vw; top : 33vw;
+    font-size: 3vw;
+    position: absolute; left : 1vw; top : 36vw;
     z-index: 4;
 }
 
 .tiktok {
-    position: absolute; left : 4vw; top : 33vw;
+    font-size: 3vw;
+    position: absolute; left : 4vw; top : 36vw;
     z-index: 4;
 }
 
 .youtube {
-    position: absolute; left : 1,5vw; top : 34vw;
+    font-size: 3vw;
+    position: absolute; left : 1,5vw; top : 37vw;
     z-index: 4;
 }
+
