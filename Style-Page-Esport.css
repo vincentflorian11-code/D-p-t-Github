@@ -212,12 +212,6 @@
     background-color: rgb(222, 165, 41);
 }
 
-.esport-image {
-    width: 100%;
-    position: absolute; top : 6vw;
-    z-index: 1;
-}
-
 .btnHistoire {
     border: 0.2vw solid rgb(201, 163, 81);
     display: inline-block;
@@ -294,13 +288,3 @@
     transform: scale(1.03);
     background-color: rgb(222, 165, 41);
 }
-
-.titre-esport {
-    position: absolute; top: 60vw;
-}
-
-.intro-text {
-    position: absolute; top: 62vw;
-}
-
-
