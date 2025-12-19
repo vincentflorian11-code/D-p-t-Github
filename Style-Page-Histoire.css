@@ -5,48 +5,45 @@
 }
 
 .mode-clair {
-    / Mode Clair : Fond blanc et texte noir /
-    --fond-histoire: none; / Supprime le GIF de fond /
+    /* Mode Clair : Fond blanc et texte noir */
+    --fond-histoire: none; 
     --couleur-texte: #000000;
-    background-color: #ffffff; / Définit la couleur de fond en blanc /
+    background-color: #ffffff; 
 }
 .page-histoire {
     margin: 0;
     padding: 0;
-    / Utilisation de la variable pour le fond /
     background-image: var(--fond-histoire); 
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    / Utilisation de la variable pour le texte /
     color: var(--couleur-texte);
     font-family: Arial, sans-serif;
-    transition: 0.3s; / Pour une transition douce entre les modes /
+    transition: 0.3s;
 }
 .hero-img {
-    width: 100%;       / L'image prend toute la largeur de la page  /
-    max-height: 400px; / On limite la hauteur pour l'effet bannière  /
-    object-fit: cover; / Important : cela évite de déformer l'image en la recadrant proprement /
-    display: block;    / Supprime l'espace vide sous l'image /
+    width: 100%;  
+    max-height: 400px;
+    object-fit: cover; 
+    display: block;   
 }
 .content-blue-box {
-    text-align: center;      / Centre tout le texte /
-    / On réduit le padding du haut pour remonter le titre /
+    text-align: center;     
     padding: 20px 10% 60px 10%; 
 }
 
 .content-blue-box h1 {
-    font-size: 4rem;         / Taille de police relative /
-    text-transform: uppercase;/ Tout en majuscules /
-    margin-top: 0;           / On colle le titre en haut /
+    font-size: 4rem;       
+    text-transform: uppercase;
+    margin-top: 0;         
 }
 
 .content-blue-box p {
-    font-size: 1.2rem;       / Texte plus gros /
-    text-align: justify;     / Texte bien aligné /
-    line-height: 1.6;        / Espacement pour la lisibilité /
-    max-width: 1000px;       / Largeur max pour ne pas être trop long /
-    margin: 0 auto 20px auto;/ Centre le bloc de paragraphe */
+    font-size: 1.2rem;      
+    text-align: justify;     
+    line-height: 1.6;        
+    max-width: 1000px;     
+    margin: 0 auto 20px auto;
 
 .MenuAccueil {
     color: rgb(254, 206, 102);
@@ -273,6 +270,7 @@
     transform: scale(1.03);
     background-color: rgb(222, 165, 41);
 }
+
 
 
 
